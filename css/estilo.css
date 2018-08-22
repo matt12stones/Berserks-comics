@@ -1,15 +1,78 @@
 @charset "utf-8";
 /* CSS Document */
-/*@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');*/
-
+body{
+	background: #263238;
+}
 h1{
 font-family:'Roboto', sans-serif;
-font-weight: 300;
+font-weight: 600;
+}
+.header{
+	text-align: center;
+	background: #78909C;
+	width: 75%;
+	margin-left: 10rem;
+	float:left;
+}
+.container{
+	width: 75%;
+	float:left;
+	text-align: center;
+	background-color: #FFFFFF;
+	border: solid thin grey;
+	margin-left: 10rem;
+	margin-right: 10rem;
 	
+	box-shadow:  0 1px 3px rgba(0,0,0,0.24);
+}
+/* MENU */
+.navbar {
+  width: 75%;
+  background-color: #555;
+  overflow: auto;
+	margin-left: 10rem;
 }
 
-.menu{
-	
+/* MENU - links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+}
+
+/* MENU - links con mouse encima*/
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* MENU - Activo */
+.active {
+  background-color: dodgerblue;
+}
+
+/* MENU Magia responsive  */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+.content{
+	padding: 16px;
+}
+.static {
+  position: fixed;
+  top: 0;
+  width: 75%;
+}
+
+.static + .content {
+  padding-top: 60px;
 }
 
 .footer{
