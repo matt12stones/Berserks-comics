@@ -7,6 +7,7 @@ h1{
 font-family:'Roboto', sans-serif;
 font-weight: 600;
 }
+/* Cabecera */
 .header{
 	text-align: center;
 	background: #78909C;
@@ -14,16 +15,14 @@ font-weight: 600;
 	margin-left: 10rem;
 	float:left;
 }
+/* Fin cabecera */
 .container{
 	width: 75%;
 	float:left;
 	text-align: center;
 	background-color: #FFFFFF;
-	border: solid thin grey;
 	margin-left: 10rem;
 	margin-right: 10rem;
-	
-	box-shadow:  0 1px 3px rgba(0,0,0,0.24);
 }
 /* MENU */
 .navbar {
@@ -63,8 +62,9 @@ font-family: 'Roboto', sans-serif;
   }
 }
 .content{
-	padding: 16px;
+	padding: 15px;
 }
+/* Menu pegado */
 .static {
   position: fixed;
   top: 0;
@@ -72,7 +72,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 .static + .content {
-  padding-top: 60px;
+  padding-top: 50px;
 }
 
 .footer{
