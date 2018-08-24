@@ -2,9 +2,9 @@
 /* CSS Document */
 body{
 	background: #263238;
+	font-family:'Roboto', sans-serif;
 }
 h1{
-font-family:'Roboto', sans-serif;
 font-weight: 600;
 }
 /* Cabecera */
@@ -74,7 +74,51 @@ font-family: 'Roboto', sans-serif;
 .static + .content {
   padding-top: 50px;
 }
-
+/* FORMULARIO */
+label {
+    display:block;
+    margin-top:20px;
+	text-align: left;
+    letter-spacing:1px;
+	font-size: 25px;
+}
+.formulario {
+    display:block;
+    margin:0 auto;
+    width:510px;
+    color: darkslategray;
+    
+}
+form {
+    margin:0 auto;
+    width:400px;
+}
+ 
+input, textarea {
+    width:380px;
+    height:27px;
+    background:rgba(47,79,79,1.00);
+    border:2px solid #f6f6f6;
+    padding:10px;
+    margin-top:5px;
+    color:white;
+}
+ 
+textarea {
+    height:150px;
+}
+ 
+#submit {
+    width:85px;
+    height:35px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+	margin-bottom: 20px;
+}
+.error{
+	border:medium solid red;
+}
 .footer{
 	
 }
