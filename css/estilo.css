@@ -11,7 +11,7 @@ font-weight: 600;
 .header{
 	text-align: center;
 	background: #78909C;
-	width: 75%;
+	padding: 30px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -22,11 +22,19 @@ font-weight: 600;
 	background-color: #FFFFFF;
 	margin-left: auto;
 	margin-right: auto;
+	padding-top: 10px;
+}
+.slides{
+	
+}
+.left{
+	text-align: left;
 }
 /* MENU */
 .navbar {
   background-color: #555;
   overflow: auto;
+	margin: auto;
 }
 
 /* MENU - links */
@@ -60,7 +68,6 @@ font-family: 'Roboto', sans-serif;
 .static {
   position: fixed;
   top: 0;
-  /*width: 75%;*/
 }
 
 .static + .content {
