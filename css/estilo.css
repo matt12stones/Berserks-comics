@@ -22,10 +22,7 @@ font-weight: 600;
 	background-color: #FFFFFF;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 10px;
-}
-.slides{
-	
+	z-index: auto;
 }
 .left{
 	text-align: left;
@@ -35,6 +32,7 @@ font-weight: 600;
   background-color: #555;
   overflow: auto;
 	margin: auto;
+	z-index: 3;
 }
 
 /* MENU - links */
@@ -62,16 +60,17 @@ font-family: 'Roboto', sans-serif;
 /* MENU Magia responsive  */
 
 .content{
-	padding: 0px;
+	padding: 10px;
 }
 /* Menu pegado */
 .static {
   position: fixed;
   top: 0;
+  left: 0;
 }
 
 .static + .content {
-  padding-top: 50px;
+  padding-top: 0px;
 }
 /* FORMULARIO */
 .my-3{
@@ -125,6 +124,145 @@ textarea {
 .footer{
 	
 }
+
+/* Slides */
+.rslides {
+  margin: 0 auto 40px;
+  }
+
+.slides_container {
+  margin-bottom: 50px;
+  position: relative;
+  float: left;
+  width: auto;
+  }
+
+.slides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.slides li {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.slides img {
+  display: block;
+  position: relative;
+  z-index: 1;
+  height: auto;
+  width: 100%;
+  border: 0;
+  }
+
+.slides .texto {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  font-size: 20px;
+  text-shadow: none;
+  color: #fff;
+  background: #000;
+  background: rgba(0,0,0, .8);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 20px;
+  margin: 0;
+  max-width: none;
+  }
+
+.slides_nav {
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  top: 57%;
+  left: 0;
+  opacity: 0.7;
+  z-index: 2;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 61px;
+  width: 38px;
+  background: transparent url(../images/themes.gif)no-repeat left top;
+  margin-top: -150px;
+  }
+
+.slides_nav:active {
+  opacity: 1.0;
+  }
+
+.slides_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 0;
+  }
+
+#lista a {
+  display: inline-block;
+}
+
+#lista img {
+  float: left;
+}
+
+#lista .rslides_here a {
+  background: transparent;
+  box-shadow: 0 0 0 2px #666;
+}
+
+#lista a {
+  padding: 0;
+}
+
+.rslides_tabs {
+  list-style: none;
+  padding: 0;
+  background: rgba(0,0,0,.25);
+  box-shadow: 0 0 1px rgba(255,255,255,.3), inset 0 0 5px rgba(0,0,0,1.0);
+  -moz-box-shadow: 0 0 1px rgba(255,255,255,.3), inset 0 0 5px rgba(0,0,0,1.0);
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.3), inset 0 0 5px rgba(0,0,0,1.0);
+  font-size: 18px;
+  list-style: none;
+  margin: 0 auto 50px;
+  max-width: 540px;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  }
+
+.rslides_tabs li {
+  display: inline;
+  float: none;
+  margin-right: 1px;
+  }
+
+.rslides_tabs a {
+  width: auto;
+  line-height: 20px;
+  padding: 9px 20px;
+  height: auto;
+  background: transparent;
+  display: inline;
+  }
+
+.rslides_tabs li:first-child {
+  margin-left: 0;
+  }
+
+.rslides_tabs .rslides_here a {
+  background: rgba(255,255,255,.1);
+  color: #fff;
+  font-weight: bold;
+  }
+
 @media screen and (min-width: 767px) {
 .static {
   position: fixed;
@@ -132,7 +270,13 @@ textarea {
   width: 100%;
 }
 }
-
+@media screen and (min-width: 360px) {
+.static {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+}
 @media screen and (max-width: 360px) {
   .navbar a {
     float: none;
@@ -149,3 +293,16 @@ textarea {
 		margin-right: 0px;
 	}
 }
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font: 24px/50px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+  .callbacks_nav {
+    top: 47%;
+	}
+	.static{
+		width: 100%;
+	}
+  }
+
