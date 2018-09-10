@@ -159,7 +159,7 @@ label {
 .formulario {
     color: darkslategray;
     background-color: #f2f2f2;
-    padding: 20px;
+    padding: 30px;
     border-radius: 5px;
 }
 
@@ -175,8 +175,8 @@ input, textarea {
     height:27px;
     background:#FFF;
     border:2px solid violet;
-    border-radius: 3px;
-    padding:10px;
+    border-radius: 5px;
+    padding:20px;
     margin-bottom: 10px;
     color:darkblue;
     resize: vertical;
@@ -185,6 +185,20 @@ input, textarea {
 textarea {
     height:150px;
 }
+
+.col-25{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75{
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+
 
 #submit {
     width:85px;
@@ -391,6 +405,12 @@ footer{
     textArea{
         width: 90%;
     }
+    
+    .col-25,.col-75{
+        width: 90%;
+        margin-top: 0;
+    }
+    
 }
 
 @media screen and (max-width: 600px) {
