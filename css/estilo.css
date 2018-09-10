@@ -1,4 +1,8 @@
 @charset "utf-8";
+@font-face {
+	font-family: comic-ink;
+	src: url(../fonts/Comic-ink.otf);
+}
 /* CSS Document */
 *{
     margin: 0;
@@ -8,7 +12,10 @@
     -moz-box-sizing: border-box;
 
 }
-
+.titulo {
+	font-family: comic-ink;
+	font-size: 300%;
+}
 body{
     background: #263238;
     background: #000 url('../images/fondo.jpg');
@@ -234,7 +241,8 @@ button:hover, a:hover {
 
 /* Add some padding inside the card container */
 .contenedor {
-    padding: 2px 16px;
+	width: 100%;
+	background: rgba(255,255,255,1.00);
 }
 
 
