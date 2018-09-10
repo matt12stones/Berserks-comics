@@ -1,38 +1,72 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Contact</title>
-<link href="css/estilo.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-<link href="css/fontawesome-all.css" type="text/css" rel="stylesheet">
-</head>
-<body class="cabecera">
-<div class="header">
-	<h1> Berserk's Comics </h1>
-</div>
-<div class="navbar" id="navbar">
-  <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> 
-  <a href="about.html"><i class="fas fa-user-astronaut"></i> Nosotros</a> 
-  <a class="active" href="Contact.html"><i class="fa fa-fw fa-envelope"></i> Contacto</a> 
-  <a href="reseña.html"><i class="fa fa-fw fa-user"></i> Reseñas</a>
-</div>
 
-<div class="container">
-	<section class="formulario">
-	<h1 class="my-3">Contacto</h1>
-		<form action="" onsubmit="return validarFormulario()">
-			<label for="nombre">Nombre:</label>
- 			<input id="nombre" type="text" name="nombre" placeholder="Nombre" required="numbers" />
- 			<label for="email">Email:</label>
- 			<input id="email" type="email" name="email" placeholder="ejemplo@correo.com" required="" />
- 			<label for="mensaje">Mensaje:</label>
- 			<textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
- 			<input id="submit" type="submit" name="submit" value="Enviar" />
-		</form>
-	</section>
-	<script src="js/validacionFormulario.js"></script>
-	<script src="js/topnav.js"></script>
-</div>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Contact</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/estilo.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        <link href="css/fontawesome-all.css" type="text/css" rel="stylesheet">
+
+
+        <!--favicon-->
+        <link rel="icon" href="images/contact.png">
+
+
+
+    </head>
+
+
+
+
+    <body>
+
+        <div class="header">
+            <h1> Berserk's Comics </h1>
+        </div>
+
+        <div class="navbar" id="navbar">
+            <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+            <a href="about.html"><i class="fas fa-user-astronaut"></i> Nosotros</a> 
+            <a class="active" href="Contact.html"><i class="fa fa-fw fa-envelope"></i> Contacto</a> 
+            <a href="reseña.html"><i class="fa fa-fw fa-user"></i> Reseñas</a>
+        </div>
+
+        <div class="container">
+            <section class="formulario">
+                <!--Titulo del Formulario -->
+                <h1 class="my-3">Contacto</h1>
+
+                <form action="" onsubmit="return validarFormulario()">
+                    <!--Insertar el nombre-->
+                    <label for="nombre">Nombre:</label>
+                    <input id="nombre" type="text" name="nombre" placeholder="Nombre" required="" />
+
+                    <!--Insertar el mail-->
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="email" placeholder="ejemplo@correo.com" required="" />
+
+                    <!--Insertar Texto-->
+                    <label for="mensaje">Mensaje:</label>
+
+
+                    <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+
+                    <!--Boton enviar-->
+                    <input id="submit" type="submit" name="submit" value="Enviar" />
+                </form>
+
+            </section>
+
+            
+            
+
+
+            <script src="js/validacionFormulario.js"></script>
+            <script src="js/topnav.js"></script>
+        </div>
+
+    </body>
+
 </html>
