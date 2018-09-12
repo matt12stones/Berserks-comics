@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="es">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,8 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script src="js/responsiveslides.min.js"></script>
         <script src="js/slides.js"></script>	
-         <!--favicon-->
+
+        <!--favicon-->
         <link rel="icon" href="images/home.png">
         <title>Home - Berserk's Comics</title>
     </head>
@@ -20,42 +21,94 @@
             <header>
                 <div class="header">
                     <h1 class="titulo"> Berserk's Comics </h1>
+                    <h4 class="descripcion">Tu lugar del noveno arte</h4>
                 </div>
                 <div class="navbar" id="navbar">
-                    <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+                    <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> 
                     <a href="about.html"><i class="fas fa-user-astronaut"></i> Nosotros</a> 
                     <a href="Contact.html"><i class="fa fa-fw fa-envelope"></i> Contacto</a> 
-                    <a href="reseña.html"><i class="fa fa-fw fa-user"></i> Reseñas</a>
+                    <a href="reseña.html"><i class="fas fa-pencil-alt"></i> Reseñas</a>
                 </div>
             </header>
             <section class="main">
+                <h2 class="titulo-2">Comic destacado</h2>
                 <article class="articulo">
                     <div class="portada">
                         <img src="images/1.jpg" alt="Todavia no lo leo">
                     </div>
-                    <h2>Hellblazer </h2>
-                    <div class="texto">
-                        <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="contenido">
+                        <h2 class="titulo-portada">Hellblazer</h2>
+                        <h5 class="titulo-secundario">John Constantine</h5>
+                        <div class="texto">
+                            <h4>Sipnosis</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et 
+                            </p>
+                            <h4>Tags</h4>
+                            <div class="generos">
+                                <a class="btn" href="#">Vertigo</a>
+                                <a class="btn" href="#">ECC</a>
+                                <a class="btn" href="#">Constantine</a>
+                                <a class="btn" href="#">Adulto</a>
+                            </div>
+                            <div class="estado">
+                                <h4 class="titulo-estado">Estado del comic</h4>
+                                <p class="estado-resp"><span class="fas fa-circle"></span> Activo</p>
+                            </div>
+                        </div>
                     </div>
                 </article>
+                <hr class="divisor">
+                <h3 class="titulo-2">Más de Hellblazer...</h3>
+                <div class="articulos">
+                    <article>
+                        <div class="portada">
+                            <a href="#">
+                                <img src="images/1.jpg" alt="Todavia no lo leo">
+                            </a>
+
+                        </div>
+                        <div class="contenido">
+                            <h2 class="titulo-portada">Hellblazer de Jamie Delano I</h2>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="portada">
+                            <a href="reseña.html">
+                                <img src="images/2.jpg" alt="Todavia no lo leo">
+                            </a>
+                        </div>
+                        <div class="contenido">
+                            <h2 class="titulo-portada">Hellblazer de Brian Azzarello </h2>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="portada">                           
+                            <a href="#">
+                                <img src="images/3.jpg" alt="Todavia no lo leo">
+                            </a>
+
+                        </div>
+                        <div class="contenido">
+                            <h2 class="titulo-portada">Hellblazer de Garth Ennis III </h2>
+                        </div>
+                    </article>
+
+                </div>
+
                 <div class="slides_contenedor">
                     <h1 class="titulo">Ultimas novedades</h1>
                     <div class="centrar">
                         <div class="slides_container">
                             <ul class="rslides" id="novedades">
-                                <li><img src="images/1.jpg" alt=""><p class="texto">Imagen 1</p></li>
-                                <li><img src="images/2.jpg" alt=""><p class="texto">Imagen 2</p></li>
-                                <li><img src="images/3.jpg" alt=""><p class="texto">Imagen 3</p></li>
+                                <li><img src="images/100b.jpg" alt="cien balas"><p class="texto">100 Balas - Azzarello</p></li>
+                                <li><img src="images/p-1.jpg" alt="promethea"><p class="texto">Promethea I - Moore</p></li>
+                                <li><img src="images/saga1.jpg" alt="saga"><p class="texto">Saga vol. 5 - Vaughan</p></li>
                             </ul>
                             <ul class="rslides_tabs" id="lista">
-                                <li><a href="#"><img src="images/1_tn.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="images/2_tn.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="images/3_tn.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="images/100b_tn.jpg" alt="cien balas tn"></a></li>
+                                <li><a href="#"><img src="images/p-1_tn.jpg" alt="promethea tn"></a></li>
+                                <li><a href="#"><img src="images/saga1_tn.jpg" alt="saga tn"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -66,33 +119,43 @@
                     <h2>Últimos agregados</h2>
                     <article class="aside-articulo">
                         <div class="novedad">
-                            <img src="images/lateral1.jpg">
+                            <img src="images/lateral1.jpg" alt="hellblazer 1">
                         </div>
                     </article>
                     <article class="aside-articulo">
                         <div class="novedad">
 
-                            <img src="images/lateral2.jpg">
+                            <img src="images/lateral2.jpg" alt="hellblazer 2">
                         </div>
 
                     </article>
                     <article class="aside-articulo">
                         <div class="novedad">
 
-                            <img src="images/lateral3.jpg">
+                            <img src="images/lateral3.jpg" alt="hellblazer 3">
                         </div>
 
                     </article>
+                </div>
+                <div class="busqueda-comics">
+                    <h2>¿Estás buscando algo?</h2>
+
+                    <div class="busqueda">
+                        <form action="#" method="POST">
+                            <input type="text" id="busqueda" name="busqueda" placeholder="What waiting for?">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
                 </div>
             </aside>
             <footer>
                 <div class="autores">
                     <div class="autor">
-                        <h3>Lillo, Martínuli</h3>
+                        <h3>Infante, Matias Ricardo</h3>
                         <p class="subtitulo">Desarrollador normal y corriente</p>
                     </div>
                     <div class="autor">
-                        <h3>Infante, Matias Ricardo</h3>
+                        <h3>Lillo, Martín</h3>
                         <p class="subtitulo">Desarrollador normal y corriente</p>
                     </div>
                     <div class="autor">
@@ -104,10 +167,9 @@
                     <p>Copyright 2018</p>
                 </div>
             </footer>
-		</div>
+        </div>
         <!--favicon-->
         <link rel="icon" href="images/home.png">
-		<script src="js/topnav.js" type="text/javascript"></script>
-			</body>
-
+        <script src="js/topnav.js" type="text/javascript"></script>
+    </body>
 </html>
